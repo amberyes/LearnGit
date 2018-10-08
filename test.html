@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>页面布局</title>
+        <style>
+            .box{
+                width:100%;
+                height: 100%;
+                text-align: center;
+                line-height: 60px;
+                background: #DCDCDC;
+
+            }
+            .container{
+                width: 100%;
+                margin:0 auto;
+            }
+            .header{
+                width:100%;
+                height:50px;
+                background: black;
+                color:white;
+            }
+            .banner{
+              position: absolute
+              width: 100%;
+              height: 280px;
+              background: white;
+              background-image: url(img/mot.jpg);
+              background-size: 100%  350%;
+
+            }
+            .text{
+              position: relative;
+              width:50%;
+              margin:0 auto;
+              padding-top: 20px;
+              font-size:4em;
+              opacity: 0.6;
+
+
+            }
+            .content{
+                position: relative;
+                width:80%;
+                margin:0 auto;
+            }
+            .content_body{
+                position: relative;
+                width:100%;
+                height:480px;
+                background:#999999;
+
+            }
+            .content_map{
+              position: relative;
+              width:60%;
+              height:400px;
+              margin-left: 6%;
+              margin-top: 4%;
+              background: white;
+              float: left;
+
+            }
+            .content_read{
+              position: relative;
+              width: 25%;
+              height: 400px;
+              float: left;
+            }
+            .content_info{
+              width: 100%;
+              height: 300px;
+              margin:0 auto;
+              background: #006699;
+            }
+            .content_footer{
+                position: relative;
+                height:60px;
+                background: black;
+                width:100%;
+                color: white;
+            }
+            .menu{
+              font:15px verdana, arial, sans-serif;
+            }
+            .menu li{
+              float: left;
+              list-style: none;
+              padding: 0;
+              margin: 0;
+            }
+            .menu a{
+              display: block;
+              padding: 3px 80px;
+
+              width: 80px;
+              height: 50px;
+              line-height: 50px;
+              text-align: center;
+              color: #fff;
+              text-decoration: none;
+
+            }
+        </style>
+    </head>
+    <body>
+         <div class="container">
+             <div class="box">
+                <div class="header">
+                  <ul class="menu">
+  									<li><a herf="#">logo</a></li>
+  									<li><a herf="#">Home</a></li>
+  									<li><a herf="#">Propucts</a></li>
+  									<li><a herf="#">blogs</a></li>
+  									<li><a herf="#">about us</a></li>
+                  </ul>
+                </div>
+                <div class="banner" >
+                <div class="text">Map of China</div></div>
+                <div class="content">
+                    <div class="content_body">map information
+                      <div class="content_map">map</div>
+                      <div clss="content_read">
+                        <input type="text" class="input"><input type="button" style="width:40px;height:20px;" value="按钮" name="bt"></br>
+                        <textarea style="width:250px;height:200px;"></textarea>
+                      </div>
+                    </div>
+                    <div class="content_info">information about us</div>
+                </div>
+                <div class="content_footer">footer</div>
+             </div>
+         </div>
+    </body>
+</html>
